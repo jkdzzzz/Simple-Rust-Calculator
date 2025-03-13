@@ -38,5 +38,5 @@ fn main() {
         }
     };
 
-    println!("Result: {}", result);
+    println!("Result: {result}");
 }
