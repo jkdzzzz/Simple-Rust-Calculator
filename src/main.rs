@@ -3,8 +3,15 @@ use std::io::{self, Write};
 fn main() {
     let mut first_num = String::new();
     let mut second_num = String::new();
+    let mut operation = String::new();
 
     println!("Simple Rust Calculator | CLI");
+
+    print!("Please input the calculation operation! [+|-|*|/]");
+    io::stdout().flush().expect("Failed to flush stdout!");
+    io::stdin()
+        .read_line(&mut operation)
+        .expect("Not a valid input!");
 
     print!("Please input the first number: ");
     io::stdout().flush().expect("Failed to flush stdout!");
