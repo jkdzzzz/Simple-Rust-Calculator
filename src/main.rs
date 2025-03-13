@@ -11,20 +11,20 @@ fn main() {
     io::stdout().flush().expect("Failed to flush stdout!");
     io::stdin()
         .read_line(&mut operation)
-        .expect("Not a valid input!");
+        .expect("The input you provided is invalid!");
 
     print!("Please input the first number: ");
     io::stdout().flush().expect("Failed to flush stdout!");
     io::stdin()
     .read_line(&mut first_num)
-    .expect("Not a valid input!");
+    .expect("The input you provided is invalid!");
     let first_num: f32 = first_num.trim().parse().expect("Input is not a valid number!");
 
     print!("Please input the second number: ");
     io::stdout().flush().expect("Failed to flush stdout!");
     io::stdin()
     .read_line(&mut second_num)
-    .expect("Not a valid input!");
+    .expect("The input you provided is invalid!");
     let second_num: f32 = second_num.trim().parse().expect("Input is not a valid number!");
 
     let result = match operation.trim() {
